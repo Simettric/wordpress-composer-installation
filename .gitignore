@@ -1,0 +1,8 @@
+.idea
+.DS_Store
+composer.lock
+config-dev.php
+public/_wp
+public/wp-content/*
+!/public/wp-content/index.php
+/vendor
