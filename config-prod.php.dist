@@ -3,6 +3,7 @@
 /** Host settings - You need to configure your WordPress deploy url **/
 define('_BASE_URL', 'http://localhost');
 
+// your probably don´t need to change this
 define('WP_SITEURL', _BASE_URL . '/_wp' );
 define('WP_HOME',    _BASE_URL . '/' );
 
