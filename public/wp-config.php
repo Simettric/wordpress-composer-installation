@@ -27,9 +27,11 @@ if( file_exists( $config_prod_file ) ) {
 	include $config_dev_file;
 }
 
+define('WP_SITEURL', _BASE_URL . '/_wp' );
+define('WP_HOME',    _BASE_URL . '/' );
 
 define( 'WP_CONTENT_DIR', __DIR__ . '/wp-content' );
-
+define( 'WP_CONTENT_URL', _BASE_URL . '/wp-content' );
 
 /* That's all, stop editing! Happy blogging. */
 
