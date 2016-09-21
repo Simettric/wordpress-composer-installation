@@ -23,21 +23,10 @@ It uses [WordPress Packagist](https://wpackagist.org/) in order to manage your p
  
  
 
-**Clone the repo in your project directory:**
+**Create your project:**
 
 ```bash
-git clone git@github.com:Simettric/wordpress-composer-installation.git my-project
-    
-# you can remove then the .git reposity and start a new git repo
-#
-# cd my-project
-# rm -rf .git
-# git init .
-#
-```
-**Install the composer dependencies:**
-```bash
-composer install
+composer create-project simettric/wordpress-composer-installation your_directory_name "dev-master"
 ```
 **Create your configuration file:**
 ```bash
