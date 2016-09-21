@@ -1,4 +1,12 @@
 {
+    "name": "simettric/wordpress-composer-installation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Asier Marqués",
+            "email": "asiermarques@gmail.com"
+        }
+    ],
     "repositories": [
         {
             "type": "composer",
