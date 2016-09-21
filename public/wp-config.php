@@ -27,16 +27,27 @@ if( file_exists( $config_prod_file ) ) {
 	include $config_dev_file;
 }
 
+/**
+ * NOTE:
+ * in multisite installation you need to remove this two options after configure and enable the network
+ * */
+define('WP_SITEURL', _BASE_URL . '/' );
+define('WP_HOME',    _BASE_URL . '/' );
 
-define('WP_SITEURL', _BASE_URL . '/_wp' );
+
+/* Multisite example */
 
 /**
- * NOTE: 
- * in multisite installation you will probably need to update this option manually 
- * directly in the database just after the network activation process.
- * You can do this in the wp_options table, updating the row´s value with the "home" option_name 
- * */
-define('WP_HOME',    _BASE_URL . '/' );
+define( 'WP_ALLOW_MULTISITE', true );
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', true_or_false);
+define('DOMAIN_CURRENT_SITE', str_replace(["https://", "http://"], "", _BASE_URL));
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+
+define( 'SUNRISE', 'on' );**/
+
 
 define( 'WP_CONTENT_DIR', __DIR__ . '/wp-content' );
 define( 'WP_CONTENT_URL', _BASE_URL . '/wp-content' );
