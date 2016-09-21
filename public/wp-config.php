@@ -27,7 +27,15 @@ if( file_exists( $config_prod_file ) ) {
 	include $config_dev_file;
 }
 
+
 define('WP_SITEURL', _BASE_URL . '/_wp' );
+
+/**
+ * NOTE: 
+ * in multisite installation you will probably need to update this option manually 
+ * directly in the database just after the network activation process.
+ * You can do this in the wp_options table, updating the row´s value with the "home" option_name 
+ * */
 define('WP_HOME',    _BASE_URL . '/' );
 
 define( 'WP_CONTENT_DIR', __DIR__ . '/wp-content' );
