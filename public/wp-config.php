@@ -18,6 +18,8 @@
  * @package WordPress
  */
 
+require __DIR__ . "/../vendor/autoload.php";
+
 $config_dev_file  = __DIR__ . "/../config-dev.php";
 $config_prod_file = __DIR__ . "/../config-prod.php";
 
